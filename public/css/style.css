@@ -1,0 +1,652 @@
+body {
+    /* background-color: aqua; */
+    margin:0px;
+    z-index: 0;
+}
+
+.border {
+    border: solid 1px black;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Brush Script MT";
+}
+
+
+/* NavBar */
+
+.navbar-wrapper {
+    width: 100%;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-flow: row nowrap;
+    background: #056DC5;
+    color:white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;    
+    height: 70px;
+}
+
+.navbar-menu-left {
+    width: 100%;
+    height: 100%;
+    margin-right:80px;
+}
+
+.navbar-menu-right {
+    display: flex;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link, .nav-link a {
+    text-transform: uppercase;
+    font-family: 'Muli', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color:#98caf571;
+}
+
+/* ----------------------- */
+
+
+
+/* Banner */
+
+.container-header {
+    margin-top:50px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.header-descrip {
+    margin-left: 150px;
+    margin-top:50px;
+    width: 30%;
+}
+
+.header-descrip h1 {
+    color:#056DC5;
+    font-family: Helvetica;
+    font-size: 60px;
+}
+
+.header-descrip p {
+    color:#49494B;
+    font-family: Helvetica;
+    font-size:20px;
+    text-align: justify;
+}
+
+.header-div-img {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 70%;
+}
+
+.header-img {
+    width: 60%;
+}
+
+/* ---------------------------------------- */
+
+
+.productos-header {
+    text-align: center;
+    margin-top:80px;
+    color:#04568E;
+    font-family: Helvetica;
+}
+
+
+
+/* Modal */
+
+#modal {
+    display: none;
+}
+
+.modal-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 0;
+}
+
+.modal-content {
+    display:flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    top:50px;
+    left:100px;
+    width:85vw;
+    height: 85vh;
+    background-color: white;
+    z-index: 100;
+}
+
+.modal-header {
+    align-self: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50px;
+    background:white;
+    color:black;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header-title {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    padding-left:50px;
+    font-family: helvetica;
+    font-size: 18px;
+    font-weight: bold;
+    background-color:#056DC5;
+    color:white;
+}
+
+.modal-header-icon {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width:5%;
+    font-size: 18px;
+    background-color:#056DC5;
+    color:white;
+}
+
+.modal-header-icon i{
+    cursor:pointer;
+}
+
+.modal-body {
+    display: flex;
+    flex-flow: column nowrap; 
+    align-items: center;
+    overflow-y:auto;
+    padding-top:50px;
+}
+
+.modal-body h2 {
+    color: #056DC5;
+    font-family: Helvetica;
+    font-size: 30px;
+}
+
+.modal-body-options {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.modal-body-options button {
+    margin-right: 10px;
+    width:200px;
+
+    background-color:#28a745;
+    color:white;
+    border:none;
+    cursor:pointer;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+
+.btn-erase {
+    background-color:#e0e0e0!important;
+    color: rgba(0, 0, 0, 0.87)!important;
+}
+
+.pago {
+    display: none;
+    width: 60%;
+    height: 150px;
+    padding:10px 20px 10px 20px;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pago table tr td{
+    font-family: Helvetica;
+    font-size: 18px;
+
+}
+
+.pagar-input {
+    width: 400px!important;
+    height: 30px!important;
+    border:1px gainsboro solid;
+}
+
+.btn-pagar {
+    width:200px;
+
+    background-color:#28a745;
+    color:white;
+    border:none;
+    cursor:pointer;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+
+#tabla-productos {
+    width: 60%;
+    border-collapse: collapse;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+#tabla-productos tr td{
+    height: 50px;
+    text-align: center;
+    font-family: helvetica;
+}
+
+#tabla-productos tr th{
+    height: 50px;
+    text-align: center;
+    font-family: helvetica;
+}
+
+#tabla-productos tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,.05);
+}
+
+.card-cell-img {
+    width: 50px;
+    height: 50px;
+    margin-top:8px;
+    
+}
+
+.btn-delete {
+    background-color: rgb(220, 0, 78);
+    color:white;
+    border:none;
+    cursor:pointer;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+
+/* ---------- */
+
+
+
+
+
+
+
+/* Seccion tienda */
+
+
+.content-tienda {
+    width: 100%;
+}
+
+
+
+
+.productos-cell-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.nav-link-producto {
+    height: 100%;
+    width: 100%;
+}
+
+.MuiChip-outlinedSecondary {
+    color: #CF7D83!important;
+    border: 1px solid #CF7D83!important;
+}
+
+.MuiChip-outlinedSecondary:hover {
+    color:white!important;
+    border: 1px solid #CF7D83!important;
+    background-color:  #CF7D83!important;
+}
+
+.productos-cell-div-img {
+    display:flex;
+    flex-flow:row nowrap;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos-grid {
+    
+    display: grid;
+
+    /* border: 2px solid #dbdbdb; */
+    margin-left:168px;
+    margin-right: 168px;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+
+    justify-items:center;
+    
+}
+
+.productos-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+
+.productos-cell {
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dbdbdb;
+    width: 90%;
+    height: 300px;
+    margin-top:30px;
+    text-align: center;
+}
+
+.productos-cell-desc {
+    height: 30%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size:12px;
+}
+
+.productos-cell-desc span {
+    display:none;
+}
+
+.productos-cell-desc b {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.productos-tipo-grid {
+    margin-left:168px;
+    margin-right: 168px;
+    margin-bottom: 20px;
+}
+
+.nav-link-producto, .nav-link-producto a {
+    text-transform: uppercase;
+    font-family: 'Muli', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link-producto:hover {
+    color:gray;
+}
+
+
+.productos-chip {
+    margin-left: 10px;
+}
+
+.btn-add-carrito {
+    display:none;
+    margin-top:10px;
+    background-color: #1976d2;
+    color:white;
+    border:none;
+    cursor:pointer;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+
+.img-effect {
+    /* height: 68%; */
+}
+
+.txt-effect {
+    background-color:#056DC5;
+    color:white;
+}
+
+
+
+/* ----------------- */
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin-top:50px;
+    background-color: #056DC5;
+}
+
+footer div {
+    color:white;
+    font-size: 14px;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer div i{
+    font-size: 30px;
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+
+
+/* ----------------- */
+
+/* alerts */
+
+.alert {
+    display: none;
+    position: fixed;
+    top:100px;
+    right:50px;
+
+    z-index:2000;
+
+    flex-flow: row nowrap;
+    /* justify-content: center; */
+    align-items: center;
+    
+    width:300px;
+    height: 50px;
+
+    padding-left:20px;
+
+    background-color: #056DC5;
+    color:white;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+
+    border-bottom: solid 5px rgba(0, 0, 0, 0.87);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+/* -------------------- */
+
+
+/* Login */
+
+
+.login-background-trans {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0, 0, 0.4);
+    z-index: 2;
+}
+
+.login-background {
+    background-image: url('http://localhost/servidorWebLab/TiendaLinea/public/images/fondoLogin2.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    z-index: 1;
+}
+
+.login-container {
+    display: flex;
+
+    flex-flow:row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.login-cuadro {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    width:400px;
+    height: 500px;
+    background-color:white;
+    z-index: 4;
+    border-radius: 20px;
+    margin-right: 200px;
+    border:solid 2px #8CAAB4;
+
+}
+
+.login-form {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 30px 0px 30px;
+    height: 60%;
+    margin-top:30px;
+
+}
+
+.login-cuadro h2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30%;
+    /* background-color: red; */
+    font-family: Helvetica;
+    font-size: 30px;
+}
+
+.login-text {
+    width:300px!important;
+}
+
+.login-error {
+    color:red;
+    font-weight: bold;
+}
